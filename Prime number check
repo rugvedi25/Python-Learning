@@ -1,0 +1,26 @@
+Non-negative = Positive/zero
+The following example works only for positive integers, but fails the tests when zero is passed.
+
+def is_prime(x):
+  for n in range (2, (x-1)):
+    if x / n == 0:
+    	return False
+    else: 
+      return True
+    
+print is_prime(7)
+
+
+Real Solution:- 
+
+ def is_prime(x):
+    if x < 2:
+        return False
+    else:
+        for n in range(2, x-1):
+          print n
+          if x % n == 0:
+              return False
+        return True
+
+print is_prime(2)      
