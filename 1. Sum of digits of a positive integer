@@ -1,0 +1,31 @@
+* Converting the integer into a String
+  
+  #Method 1 (Using the inbuilt sum of a list function)
+
+def digit_sum(n):
+  lst = [] 
+  conv_str = str(n) 
+  for digit in conv_str:
+    lst.append(int(digit))
+  print sum(lst)
+  
+  #Method 2 (Counter method)
+
+def digit_sum(n):
+  conv_str = str(n)
+  total = 0
+  for digit in conv_str:
+    total += int(digit)
+  print total
+
+
+* Isolating all the digits in a integer and then getting a sum
+
+def digit_sum(n):
+  print (n)
+  result = 0
+  while n > 0:
+    digit = n % 10
+    result = digit + result 
+    n = n // 10
+  print (result)
