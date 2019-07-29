@@ -1,0 +1,8 @@
+def count(sequence, item): 
+  total = 0
+  for s in sequence:
+    if s == item:
+    	total += 1
+  return total
+
+    
