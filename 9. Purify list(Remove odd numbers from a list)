@@ -1,0 +1,8 @@
+def purify(num_list):
+  list1 = []
+  for num in num_list:
+    if num%2 == 0:
+      list1.append(num)
+  return list1
+
+print purify([1,2,3,4,5,6])
